@@ -34,7 +34,7 @@ def transform_to_distances(data):
     euclidean_distance = lambda x0, y0, x1, y1: np.sqrt(np.square(x0 - x1) + np.square(y0 - y1))
 
     # infere o número de pontos na base identificando as colunas da coordenada x
-    total_points = len(list(filter(lambda column: column.endswith('x'), raw_data.columns)))
+    total_points = len(list(filter(lambda column: column.endswith('x'), data.columns)))
 
     data_frame_as_dict = {}
     columns = []
