@@ -1,5 +1,5 @@
 install.dependencies:
 	pip install -r requirements.txt
 
-run:
+run.notebooks:
 	jupyter lab
